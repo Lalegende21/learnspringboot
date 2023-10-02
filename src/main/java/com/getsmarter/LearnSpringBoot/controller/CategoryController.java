@@ -2,7 +2,7 @@ package com.getsmarter.LearnSpringBoot.controller;
 
 import com.getsmarter.LearnSpringBoot.dto.CategoryDTO;
 import com.getsmarter.LearnSpringBoot.entity.Category;
-import com.getsmarter.LearnSpringBoot.services.CategoryService;
+import com.getsmarter.LearnSpringBoot.service.CategoryService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

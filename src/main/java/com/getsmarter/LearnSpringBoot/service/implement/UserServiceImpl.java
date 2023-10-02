@@ -1,5 +1,6 @@
-package com.getsmarter.LearnSpringBoot.services.implement;
+package com.getsmarter.LearnSpringBoot.service.implement;
 
+import com.getsmarter.LearnSpringBoot.dto.AdminCreate;
 import com.getsmarter.LearnSpringBoot.dto.UserDTO;
 import com.getsmarter.LearnSpringBoot.entity.User;
 
@@ -9,6 +10,7 @@ public interface UserServiceImpl {
 
     //Enregistrer un utilisateur
     UserDTO saveUser(User user);
+    AdminCreate createAdmin(AdminCreate adminCreate);
 
     //Afficher tous les utilisateurs
     List<UserDTO> getAllUser();
@@ -17,7 +19,7 @@ public interface UserServiceImpl {
     UserDTO getUser(Long id);
 
     //MAJ des données d'un utilisateur
-    User updateUser( Long id ,User user);
+    UserDTO updateUser(Long id , User user);
 
     //Suppression de tous les utilisateurs
     void deleteUser();
@@ -27,5 +29,6 @@ public interface UserServiceImpl {
 
     //Conversion d'un utilisateur en utilisateurDTO
     UserDTO convertEntityToDto(User u);
+
 
 }

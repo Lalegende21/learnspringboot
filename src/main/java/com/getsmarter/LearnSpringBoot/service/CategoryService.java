@@ -1,10 +1,10 @@
-package com.getsmarter.LearnSpringBoot.services;
+package com.getsmarter.LearnSpringBoot.service;
 
 import com.getsmarter.LearnSpringBoot.dto.CategoryDTO;
 import com.getsmarter.LearnSpringBoot.entity.Category;
 import com.getsmarter.LearnSpringBoot.repository.CategoryRepository;
-import com.getsmarter.LearnSpringBoot.services.exception.CategoryNotFoundException;
-import com.getsmarter.LearnSpringBoot.services.implement.CategoryServiceImpl;
+import com.getsmarter.LearnSpringBoot.service.exception.CategoryNotFoundException;
+import com.getsmarter.LearnSpringBoot.service.implement.CategoryServiceImpl;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

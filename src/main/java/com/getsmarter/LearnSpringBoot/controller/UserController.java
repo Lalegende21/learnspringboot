@@ -1,32 +1,33 @@
 package com.getsmarter.LearnSpringBoot.controller;
 
+import com.getsmarter.LearnSpringBoot.dto.AdminCreate;
 import com.getsmarter.LearnSpringBoot.dto.UserDTO;
 import com.getsmarter.LearnSpringBoot.entity.User;
-import com.getsmarter.LearnSpringBoot.services.UserService;
+import com.getsmarter.LearnSpringBoot.service.UserService;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@Slf4j
+@AllArgsConstructor
+@RestController()
 @RequestMapping("user")
 public class UserController {
 
     private UserService userService;
 
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }
-
-
     // La methode pour inserer les utilisateurs
     @ResponseStatus(value = HttpStatus.CREATED)
     @PostMapping()
-    public User create(@RequestBody User user) {
-
+    public User create(@RequestBody User user) throws RuntimeException {
+        log.info("Inscription validee !");
         this.userService.saveUser(user);
         return user;
     }
+
 
 
     // La methodde pour lire les utilisateurs (Read du crud)

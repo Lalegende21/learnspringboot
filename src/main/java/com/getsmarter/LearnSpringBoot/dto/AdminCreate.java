@@ -1,5 +1,6 @@
 package com.getsmarter.LearnSpringBoot.dto;
 
+import com.getsmarter.LearnSpringBoot.entity.Role;
 import lombok.Builder;
 import lombok.Data;
 
@@ -8,11 +9,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Builder
-public class UserDTO {
-
-    private long id;
-
-    private String photo;
+public class AdminCreate {
 
     private String firstname;
 
@@ -24,7 +21,4 @@ public class UserDTO {
 
     private String email;
 
-    private LocalDateTime created_at;
-
-    private Timestamp updated_at;
 }

@@ -2,11 +2,13 @@ package com.getsmarter.LearnSpringBoot.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
-import lombok.*;
+import lombok.Data;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Data
@@ -41,10 +43,18 @@ public class User {
     @Size(max = 30, message = "L'email doit etre unique et etre contenu au plus 30 caractères !")
     private String email;
 
+    @ManyToMany
+    @JoinTable(name = "user_role",
+    joinColumns = @JoinColumn(name = "id_user", referencedColumnName = "id"),
+    inverseJoinColumns = @JoinColumn(name = "id_role", referencedColumnName = "id"))
+    private List<Role> roles = new ArrayList<>();
+
     @Column(name= "created_at", nullable = false)
     private LocalDateTime created_at;
 
     @Column(name= "updated_at")
     @UpdateTimestamp
     private Timestamp updated_at;
+
+
 }

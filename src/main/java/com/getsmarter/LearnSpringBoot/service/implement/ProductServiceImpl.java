@@ -1,6 +1,5 @@
-package com.getsmarter.LearnSpringBoot.services.implement;
+package com.getsmarter.LearnSpringBoot.service.implement;
 
-import com.getsmarter.LearnSpringBoot.entity.Category;
 import com.getsmarter.LearnSpringBoot.entity.Product;
 
 import java.util.List;

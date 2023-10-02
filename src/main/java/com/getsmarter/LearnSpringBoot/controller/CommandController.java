@@ -1,7 +1,7 @@
 package com.getsmarter.LearnSpringBoot.controller;
 
 import com.getsmarter.LearnSpringBoot.entity.Command;
-import com.getsmarter.LearnSpringBoot.services.CommandService;
+import com.getsmarter.LearnSpringBoot.service.CommandService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.getsmarter.LearnSpringBoot.services.implement;
+package com.getsmarter.LearnSpringBoot.service.implement;
 
 import com.getsmarter.LearnSpringBoot.dto.CategoryDTO;
 import com.getsmarter.LearnSpringBoot.entity.Category;
