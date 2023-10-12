@@ -1,4 +1,4 @@
-package com.getsmarter.LearnSpringBoot.exception;
+package com.getsmarter.LearnSpringBoot.service.exception;
 
 public class UserNotFoundException extends RuntimeException {
     public UserNotFoundException(String message) {

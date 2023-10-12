@@ -1,4 +1,4 @@
-package com.getsmarter.LearnSpringBoot.mails;
+package com.getsmarter.LearnSpringBoot.service.mails;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;

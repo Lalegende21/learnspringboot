@@ -2,7 +2,7 @@ package com.getsmarter.LearnSpringBoot.service;
 
 import com.getsmarter.LearnSpringBoot.entity.Command;
 import com.getsmarter.LearnSpringBoot.repository.CommandRepository;
-import com.getsmarter.LearnSpringBoot.exception.CommandNotFoundException;
+import com.getsmarter.LearnSpringBoot.service.exception.CommandNotFoundException;
 import com.getsmarter.LearnSpringBoot.service.implement.CommandServiceImpl;
 import org.springframework.stereotype.Service;
 

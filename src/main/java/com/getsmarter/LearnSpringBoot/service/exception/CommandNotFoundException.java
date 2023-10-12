@@ -1,4 +1,4 @@
-package com.getsmarter.LearnSpringBoot.exception;
+package com.getsmarter.LearnSpringBoot.service.exception;
 
 public class CommandNotFoundException extends RuntimeException {
     public CommandNotFoundException(String message) {

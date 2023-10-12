@@ -1,4 +1,4 @@
-package com.getsmarter.LearnSpringBoot.mails;
+package com.getsmarter.LearnSpringBoot.service.mails;
 
 public interface EmailService {
 
