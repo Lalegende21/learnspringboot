@@ -1,4 +1,4 @@
-package com.getsmarter.LearnSpringBoot.service.exception;
+package com.getsmarter.LearnSpringBoot.exception;
 
 public class ProductNotFoundException extends RuntimeException {
     public ProductNotFoundException(String message) {

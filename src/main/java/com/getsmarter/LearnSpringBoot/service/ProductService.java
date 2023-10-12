@@ -2,7 +2,7 @@ package com.getsmarter.LearnSpringBoot.service;
 
 import com.getsmarter.LearnSpringBoot.entity.Product;
 import com.getsmarter.LearnSpringBoot.repository.ProductRepository;
-import com.getsmarter.LearnSpringBoot.service.exception.ProductNotFoundException;
+import com.getsmarter.LearnSpringBoot.exception.ProductNotFoundException;
 import com.getsmarter.LearnSpringBoot.service.implement.ProductServiceImpl;
 import org.springframework.stereotype.Service;
 

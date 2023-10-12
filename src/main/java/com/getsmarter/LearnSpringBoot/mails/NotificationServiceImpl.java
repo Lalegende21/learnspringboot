@@ -1,4 +1,4 @@
-package com.getsmarter.LearnSpringBoot.service.mails;
+package com.getsmarter.LearnSpringBoot.mails;
 
 import org.springframework.stereotype.Service;
 

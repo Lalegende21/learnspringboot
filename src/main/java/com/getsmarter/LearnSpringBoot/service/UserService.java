@@ -4,11 +4,12 @@ import com.getsmarter.LearnSpringBoot.dto.AdminCreate;
 import com.getsmarter.LearnSpringBoot.dto.UserDTO;
 import com.getsmarter.LearnSpringBoot.entity.Role;
 import com.getsmarter.LearnSpringBoot.entity.User;
+import com.getsmarter.LearnSpringBoot.exception.UserNotFoundException;
 import com.getsmarter.LearnSpringBoot.repository.RoleRepository;
 import com.getsmarter.LearnSpringBoot.repository.UserRepository;
-import com.getsmarter.LearnSpringBoot.service.exception.UserNotFoundException;
 import com.getsmarter.LearnSpringBoot.service.implement.UserServiceImpl;
 import lombok.AllArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -23,6 +24,8 @@ public class UserService implements UserServiceImpl {
 
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
+
+    private final PasswordEncoder passwordEncoder;
 
 
     //Enregistrer un utilisateur
@@ -43,7 +46,7 @@ public class UserService implements UserServiceImpl {
         user.setEmail(adminCreate.getEmail());
         user.setFirstname(adminCreate.getFirstname());
         user.setLastname(adminCreate.getLastname());
-        user.setPassword(adminCreate.getPassword());
+        user.setPassword(passwordEncoder.encode(adminCreate.getPassword()));
         user.setPhoneNumber(adminCreate.getPhoneNumber());
         user.setRoles(roles);
         user.setCreated_at(LocalDateTime.now());

@@ -1,7 +1,6 @@
-package com.getsmarter.LearnSpringBoot.service.mails;
+package com.getsmarter.LearnSpringBoot.mails;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController

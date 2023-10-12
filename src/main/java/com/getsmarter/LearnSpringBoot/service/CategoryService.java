@@ -3,7 +3,7 @@ package com.getsmarter.LearnSpringBoot.service;
 import com.getsmarter.LearnSpringBoot.dto.CategoryDTO;
 import com.getsmarter.LearnSpringBoot.entity.Category;
 import com.getsmarter.LearnSpringBoot.repository.CategoryRepository;
-import com.getsmarter.LearnSpringBoot.service.exception.CategoryNotFoundException;
+import com.getsmarter.LearnSpringBoot.exception.CategoryNotFoundException;
 import com.getsmarter.LearnSpringBoot.service.implement.CategoryServiceImpl;
 import org.springframework.stereotype.Service;
 
